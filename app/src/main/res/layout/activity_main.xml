@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57BF93"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luxisbi"
+        android:gravity="center"
+        android:text="Dice App"
+        android:textColor="#1A4E38"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/txtSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint="12"
+        android:textColorHint="@color/white"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/dice6" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toEndOf="@id/img1"
+            android:src="@drawable/dice6" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RL1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:text="Roll IT" />
+
+</RelativeLayout>
